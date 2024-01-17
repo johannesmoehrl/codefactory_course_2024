@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h3>FORM</h3>
+    <hr>
+    <form action="#" method="GET">
+        <label for="firstName">First Name:</label>
+        <input name="firstName" type="text" id="firstName">
+        <br>
+        <label for="lastName">Last Name:</label>
+        <input name="lastName" type="text" id="lastName">
+        <br>
+        <label for="Age">Age:</label>
+        <input name="Age" type="number" id="Age">
+        <hr>
+        <label for="textarea">Write Something about you here:</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br>
+        <select name="" id="dropdown">
+            <optgroup label="(choose)">
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+            </optgroup>
+        </select>
+        <br>
+        <fieldset>
+            <legend>Do you have a Pet ?</legend>
+            <label for="radio">
+                no
+                <input name="petQuestionRadio" type="radio">
+            </label>
+
+            <label for="radio">
+                yes
+                <input name="petQuestionRadio" type="radio">
+            </label>
+            <label for="checkbox">
+                <input type="checkbox">
+                yes
+            </label>
+        </fieldset>
+        <input type="file" accept="image/png">
+        <br>
+        <hr>
+        <input type="submit" value="send">
+        <input type="reset">
+
+    </form>
+</body>
+
+</html>
