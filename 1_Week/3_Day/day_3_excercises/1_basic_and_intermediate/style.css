@@ -5,10 +5,13 @@ h1 {
     color: blue;
 }
 #third span {
-    display: hidden;
+    visibility: visible;
 }
 #fifth p {
     display: none;
+}
+#third p {
+    background-color: blue;
 }
 img {
     width: 300px;
