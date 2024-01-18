@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(71, 71, 71);
+}
+header, main {
+    width: 100%;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+nav img {
+    width: 150px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    border: solid 1px black;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: whitesmoke;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
+
+.nav-links {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.hero {
+    background-color: whitesmoke;
+    text-align: center;
+    box-shadow: 10px 10px 10px 0px black;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.main-content {
+    width: 60vw;
+    background-color: white;
+    padding: 50px;
+    padding-top: 0px;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+.subscription-form p{
+    color: white;
+}
+form {
+    padding: 20px;
+}
