@@ -26,10 +26,12 @@ body {
 p {
     margin: 0 0 10px;
 }
-h3 {
-    font-size: 100px;
-}
 
+.danger  {
+    color: brown;
+    font-weight: bold;
+
+}
 #container {
     position: relative;
     background: transparent;
@@ -39,7 +41,8 @@ h3 {
 }
 
 #container h3 {
-    font-size: 110%;
+
+    font-size: 18pt;
     font-weight: bold;
     margin-bottom: 10px;
     margin-top: 30px;
@@ -111,10 +114,18 @@ h3 {
     padding: 20px;
 }
 
+.strong {
+    color: #DD8804;
+}
+
 #participation h3 {
     height: 37px;
     margin: 0;
     padding: 0;
+}
+#participation {
+    color: white;
+    background-color: #747C3A;
 }
 
 #participation h3 span {
@@ -240,4 +251,10 @@ h3.archives span {
     margin: 0;
     padding: 10px;
     color: #FFFFFF;
+}
+
+.name-list {
+    color: #525D21;
+    font-style: italic;
+
 }
