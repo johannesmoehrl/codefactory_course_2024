@@ -1,0 +1,140 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    color: whitesmoke;
+}
+
+nav {
+    background-color: aqua;
+}
+
+nav>a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+}
+
+nav>a:visited {
+    color: green;
+}
+
+nav>a:active {
+    color: magenta;
+}
+
+nav>a:hover,
+nav a:focus {
+    background-color: beige;
+}
+
+nav>a::first-letter {
+    text-transform: uppercase;
+}
+
+/*Start of main sectio*/
+
+.container {
+    width: 90%;
+    height: 300px;
+    background-color: darksalmon;
+    margin-inline: auto;
+    margin-block: 30px;
+    position: relative;
+    box-shadow: inset 0px 10px 20px 1px black;
+
+}
+
+.container div {
+    position: absolute;
+    box-shadow: inset 0px 10px 20px 1px black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-inline: auto;
+    margin-block: 30px;
+}
+
+.container div[class="box1"] {
+    width: 70%;
+    height: 70%;
+    background-color: aquamarine;
+
+}
+
+.container div[id] {
+    width: 70%;
+    height: 70%;
+    background-color: khaki;
+}
+
+[class~="inner"] {
+    width: 70%;
+    height: 70%;
+    background-color: #701717;
+}
+
+[class$="bottom"] {
+    border-radius: 20px;
+}
+
+[class^="bottom"] {
+    border-radius: 20px;
+    width: 70%;
+    height: 70%;
+    background-color: #2dacae;
+}
+
+[id*="ox"] {
+    border-radius: 100px;
+}
+
+
+
+form [name*="tac"] input[type="text"] {
+    background-color: firebrick;
+}
+
+form [name*="tac"] input[type="text"]::placeholder {
+    background-color: whitesmoke;
+}
+
+#firstName input::placeholder {
+    background-color: black;
+    color: white;
+}
+
+#firstName label {
+    font-size: 22px;
+    text-decoration: line-through;
+    text-shadow: 3px 3px 3px wheat;
+}
+
+
+#text {
+    height: 20vh;
+    width: 100vw;
+    padding: 20px;
+    font-family: 'Lemon', serif;
+    border: 3px solid red;
+}
+
+.rem {
+    font-size: 1rem;
+}
+.em {
+    font-size: 1em;
+}
+#parent {
+    font-size: 2em;
+}
