@@ -1,0 +1,163 @@
+:root {
+    --default-padding: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    border: 1px solid black;
+    width: 400px;
+    margin-top: 50px;
+
+}
+
+.header {
+    padding: var(--default-padding);
+}
+
+.seperator {
+    background-color: black;
+    height: 20px;
+    width: auto;
+}
+
+.extra {
+    display: flex;
+    flex-direction: column;
+}
+
+.extra>p {
+    text-align: end;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.section {
+    padding: var(--default-padding);
+
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.section-heading-right {
+    display: flex;
+}
+
+.section-heading-right>p {
+    margin-left: 10px;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.row-1>p {
+    font-weight: 600;
+}
+
+.row-1-right {
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+
+}
+
+
+.row-2 {
+    width: 95%;
+
+}
+
+.row-2-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.row-2-right {
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+
+}
+
+.seperator-section-1 {
+    background-color: black;
+    height: 10px;
+    width: 100%;
+}
+
+.section-2-heading {
+    display: flex;
+    justify-content: end;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.seperator-section-2 {
+    background-color: black;
+    height: 20px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.not-bold p {
+    font-weight: 300;
+}
+.extra-text {
+    font-size: 12px;
+}
+.section-table-heading {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.table-headings {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+.section-table-content {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.indent {
+    margin-left: 20px;
+    width: 20%;
+}
+.normal {
+    width: 23%;
+}
+.footer {
+    font-size: 12px;
+}
