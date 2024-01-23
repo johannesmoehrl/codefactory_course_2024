@@ -1,0 +1,18 @@
+.navbar ul {
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+}
+li {
+    padding: 20px;
+    transition: all 500ms;
+
+}
+li:hover {
+    font-size: 20px;
+    color: red;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+}
