@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  background-color: red;
+}
+.nav__ul {
+  background-color: cyan;
+  display: flex;
+  list-style-type: none;
+}
+.nav__ul__li {
+  color: orange;
+}
+
+.wrapper {
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid black;
+}
+.wrapper .box, .wrapper .sibling {
+  width: 50%;
+  height: 50%;
+}
+@media (width > 500px) {
+  .box, .wrapper .sibling {
+    background-color: red;
+  }
+}/*# sourceMappingURL=style.css.map */

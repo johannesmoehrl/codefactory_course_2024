@@ -1,0 +1,39 @@
+$color-bg: red;
+@forward 'boilerplate';
+@use 'utils';
+// @use 'utils' as *;
+// @use 'utils' as alias;
+// to use without utils.
+
+// @mixin responsive-text($small-screen, $big-screen) {
+
+// }
+.nav {
+  background-color: $color-bg;
+  &__ul {
+    background-color: utils.$my-color;
+    display: flex;
+    list-style-type: none;
+    &__li {
+      color: orange;
+    }
+  }
+}
+
+.wrapper {
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid black;
+  .box {
+    width: 50%;
+    height: 50%;
+  }
+  .sibling {
+    @extend .box;
+  }
+}
+@media (width > 500px) {
+    .box {
+        background-color: red;
+    }
+}
