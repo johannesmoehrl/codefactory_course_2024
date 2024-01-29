@@ -1,0 +1,36 @@
+@use 'boilerplate' as *;
+
+.nav-ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    background-color: $color-secondary;
+    color: $color-primary;
+
+    .nav-item {
+        padding: 20px;
+    }
+}
+.main-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .main-container-heading {
+        padding: 50px;
+    }
+   
+    .image-container {
+        height: 500px;
+        width: 500px;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+}
