@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(38, 38, 38);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Lineal-Black";
+  src: url("../fonts/Lineal-Black.woff");
+}
+@font-face {
+  font-family: "Lineal-Light";
+  src: url("../fonts/Lineal-Light.woff");
+}
+.nav-container {
+  font-family: Lineal-Light;
+  color: white;
+}
+.nav-container form {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav-container form button {
+  font-family: Lineal-Light;
+}
+
+@media screen and (max-width: 550px) {
+  .search-form {
+    display: none !important;
+  }
+}
+.search-form-mobile {
+  margin: 20px;
+}
+.search-form-mobile button {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (min-width: 550px) {
+  .search-form-mobile {
+    display: none !important;
+  }
+}/*# sourceMappingURL=style.css.map */
