@@ -26,6 +26,11 @@ console.log(randomFood2)
 const crystalGazer = (numOfChilder, partnerName, location, job) => console.log(`You will be a ${job} in ${location} and married to ${partnerName} with ${numOfChilder} Children`);
 crystalGazer(5, "Silke", "Wien", "Softwareentwickler");
 
+const crystalGazer2 = (a, b, c) => {
+    let d = `${a} blabla ${b} bla ${c}`
+    return d
+}
+console.log(crystalGazer2("AA", "BB", "cc"))
 //Exercise 4 
 const ageCalculator = (birthYear, currentYear) => {
     let age = currentYear - birthYear;
