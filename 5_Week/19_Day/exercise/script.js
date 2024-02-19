@@ -64,18 +64,52 @@ function createCart(cart) {
     cartContainer.innerHTML = ""
     for (let item of cart) {
         cartContainer.innerHTML += `
-
         <div class="myclass">
                 <img src="${item.img}" width="50">
                 <p>${item.type}</p>
                 <p>${item.price}</p>
-                <p class="plusBtns">+</p>
+                <button class="plusBtns">+</button>
                 <p class="quantity">${item.quantity}</p>
-                <p class=" minusBtns">-</p>
-                <p class=" deleteBtns">X</p>
+                <button class="minusBtns">-</button>
+                <button class="deleteBtns">X</button>
         </div>
     `
     }
+
+    let plusBtns = document.querySelectorAll(".plusBtns");
+
+    plusBtns.forEach((element, i) => {
+        element.addEventListener('click', () => {
+            cart[i].quantity++;
+            document.querySelectorAll(".quantity")[i].innerHTML = cart[i].quantity;
+
+        })
+    });
+
+
+    let minusBtns = document.querySelectorAll(".minusBtns");
+
+    minusBtns.forEach((element, i) => {
+        element.addEventListener('click', () => {
+            if (cart[i].quantity != 1) {
+                cart[i].quantity--;
+                document.getElementsByClassName("quantity")[i].innerHTML = cart[i].quantity;
+            } else {
+                cart.splice(i, 1);
+                createCart();
+            }
+        })
+    });
+
+    let deleteBtns = document.querySelectorAll(".deleteBtns");
+
+    deleteBtns.forEach((element, i) => {
+        element.addEventListener('click', () => {
+            cart[i].quantity = 1;
+            cart.splice(i, 1);
+            createCart();
+        })
+    });
 }
 
 

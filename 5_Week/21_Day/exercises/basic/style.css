@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#info-modal {
+    border-radius: 20px;
+    border: 1px solid gray;
+    height: 50vh;
+    margin: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

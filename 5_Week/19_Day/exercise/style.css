@@ -38,4 +38,12 @@ nav {
 
 #cart {
     display: flex;
+    flex-direction: column;
+}
+
+.myclass {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
